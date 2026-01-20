@@ -33,10 +33,10 @@ This repository contains SQL queries for extracting IPEDS (Integrated Postsecond
 
 Before running the queries, update the following:
 
-1. **Year/Term Codes:** Replace `'2025'` and `'10'` with appropriate values
+1. **Year/Term Codes:** Currently set to `'2025'` and `'10'` (Fall 2025)
    - Term codes: `10` = Fall, `30` = Spring, `50` = Summer
-2. **Institution State:** Change `'WV'` to your institution's state in the residence query
-3. **Address Code:** Verify `'PERM'` is correct for permanent addresses
+2. **Institution State:** Set to `'TX'` (Texas) for in-state/out-of-state classification
+3. **Address Code:** Set to `'PERM'` for permanent addresses
 
 ## IPEDS Race/Ethnicity Mapping
 

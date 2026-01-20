@@ -278,7 +278,6 @@ ORDER BY residence_category;
 
 
 -- Summary: First-time freshmen by residence type
--- NOTE: Change 'WV' to your institution's state
 
 SELECT
     CASE
@@ -286,7 +285,7 @@ SELECT
             THEN 'Nonresident Alien'
         WHEN UPPER(COALESCE(a.COUNTRY, 'US')) NOT IN ('US', 'USA', 'UNITED STATES', '')
             THEN 'Foreign Countries'
-        WHEN a.STATE = 'WV'
+        WHEN a.STATE = 'TX'
             THEN 'In-State'
         WHEN a.STATE IS NOT NULL AND a.STATE != ''
             THEN 'Out-of-State'
